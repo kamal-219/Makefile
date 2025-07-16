@@ -1,0 +1,7 @@
+target:hello.o func.o 
+	gcc hello.o func.o -o out
+hello.o:hello.c
+	gcc -c hello.c
+func.o:func.c
+	gcc -c func.c
+
