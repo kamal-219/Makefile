@@ -1,0 +1,8 @@
+target:sum.o add.o
+	gcc sum.o add.o -o out
+sum.o:sum.c
+	gcc -c sum.c
+add.o:add.c
+	gcc -c add.c
+clean:
+	rm -f sum
