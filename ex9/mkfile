@@ -1,0 +1,10 @@
+target=out
+CC=gcc
+file=maths.o power.o square.o
+$(target):$(file)
+	$(CC) $^ -o $@ -lm
+%.o:%.c
+	$(CC) -c $^ -o $@ -lm
+clean:
+	rm -f *.o $(target)
+

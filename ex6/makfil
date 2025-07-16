@@ -1,0 +1,7 @@
+target:main.o prime.o
+	gcc main.o prime.o -o out
+main.o:main.c
+	gcc -c main.c
+prime.o:prime.c
+	gcc -c prime.c
+

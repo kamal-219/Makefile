@@ -1,0 +1,7 @@
+target:main.o fib.o
+	gcc main.o fib.o -o out
+main.o:main.c
+	gcc -c main.c
+fib.o:fib.c
+	gcc -c fib.c
+
