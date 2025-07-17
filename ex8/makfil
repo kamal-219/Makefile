@@ -1,0 +1,11 @@
+target:main
+CC=gcc
+FLAG=-g
+file=main.o read.o write.o
+$(target):$(file)
+	$(CC) $(FLAG) $^ -O S@
+%.O:%.C
+	$(CC) -C $(FLAG) $^ -O $@
+clean:
+	rm -f * .o $(target)
+
