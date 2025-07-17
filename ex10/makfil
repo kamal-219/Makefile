@@ -1,0 +1,6 @@
+target:main.o length.o copy.o
+	gcc main.o length.o copy.o -o out
+length.o:length.c
+	gcc -c length.c
+copy.o:copy.c
+	gcc -c copy.c
