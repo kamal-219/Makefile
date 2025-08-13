@@ -1,0 +1,9 @@
+target:main
+CC:gcc
+FLAG=-g
+file=main.o add.o mul.o trans.o
+$(target):$(file)
+	$(CC) $(FLAG) $^ -O $@
+%.O:%.C
+	$(CC) -C $(FLAG) $^ -O $@
+
